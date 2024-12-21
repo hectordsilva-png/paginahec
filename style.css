@@ -1,0 +1,215 @@
+/* Reset básico de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte padrão */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Estilo para o cabeçalho (Hero Section) */
+.hero {
+    background-image: url(lilo17.jpg); /* Adicione sua imagem de fundo aqui */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero button {
+    padding: 15px 40px;
+    font-size: 1.2em;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: #444;
+}
+
+/* Seção de Introdução */
+.intro {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Seção de Módulos */
+.modules {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.modules h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.modules p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Seção de Depoimentos */
+.testimonial {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.testimonial blockquote {
+    font-size: 1.3em;
+    font-style: italic;
+    color: #333;
+    border-left: 5px solid #000;
+    padding-left: 20px;
+    margin: 30px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Seção de Bônus */
+.bonuses {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.bonuses h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.bonuses ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.bonuses ul li {
+    font-size: 1.2em;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+    color: #333;
+}
+
+.bonuses ul li:hover {
+    background-color: #000;
+    color: white;
+}
+
+/* Seção do Formulário */
+.form-section {
+    padding: 80px 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.form-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.form-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.form-section button {
+    padding: 15px 40px;
+    font-size: 1.2em;
+    background-color: #f1c40f;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background-color 0.3s;
+}
+
+.form-section button:hover {
+    background-color: #f39c12;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .intro h2, .modules h2, .bonuses h3, .form-section h2 {
+        font-size: 2em;
+    }
+
+    .hero button, .form-section button {
+        width: 100%;
+        font-size: 1.1em;
+    }
+}
